@@ -87,9 +87,15 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h3 class="title is-2" style="text-align: center; padding-bottom: 10px;">Validation Dataset</h3>
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 7px;">Short Trajectories</h2>
-          <td>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Validation Dataset</h2>
+        <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">Short Trajectories</h3>
+        <h5>
+          <center>
+           Path Length < 100
+          </center>
+        </h5>
+        <br>
+        <td>
             <div class="row">
               <div class="col">
                   <video autoplay muted loop playsinline controls src="./resources/short/VAL_1_short.mp4" width="100%"
@@ -117,7 +123,13 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 7px;">Medium Trajectories</h2>
+        <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">Medium Trajectories</h3>
+        <h5>
+          <center>
+           100 < Path Length < 200
+          </center>
+        </h5>
+        <br>
           <td>
             <div class="row">
               <div class="col">
@@ -146,7 +158,13 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 7px;">Long Trajectories</h2>
+        <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">Long Trajectories</h3>
+        <h5>
+          <center>
+           Path Length > 200
+          </center>
+        </h5>
+        <br> 
           <td>
             <div class="row">
               <div class="col">
@@ -175,8 +193,15 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h3 class="title is-2" style="text-align: center; padding-bottom: 10px;">Out-of-Distribution Dataset</h3>
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 7px;">OOD Dataset</h2>
+        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Out-of-Distribution Dataset</h2>
+        <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">OOD Dataset</h3>
+        <h5>
+          <center>
+            Dataset consist of maps of different size, obstacle structure and colour, to test the generalisation capabilities of DiPPeR.
+           </center>
+          </h5>
+        
+        
           <td>
             <div class="row">
               <div class="col">
@@ -206,8 +231,14 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-          <h2 class="title is-2" style="text-align: center; padding-bottom: 7px;">MRPB Dataset</h2>
-              <div class="row">
+          <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">MRPB Dataset</h3>
+          <h5>
+            <center>
+             Dataset used to compare DiPPeR inference speed against A* and N-A*.
+            </center>
+          </h5>
+          <br>   
+            <div class="row">
               <div class="col">
                   <video autoplay muted loop playsinline controls src="./resources/comparison/GEN10.mp4" width="100%"
                          style="border-radius:10px; "></video>
