@@ -87,7 +87,12 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Validation Dataset</h2>
-        <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">Short Trajectories</h3>
+        <h5>
+         <center>
+           We validate DiPPeR's performance on maps on the Validation Datase. It contains maps which were not seen during training but have a similar structure to the Training Dataset ones. 
+           </center>
+        </h5>
+        <h3 class="title" style="text-align: center; padding-bottom: 7px;">Short Trajectories</h3>
         <h5>
           <center>
            Path Length < 100
@@ -199,8 +204,6 @@
             Dataset consist of maps of different size, obstacle structure and colour, to test the generalisation capabilities of DiPPeR.
            </center>
           </h5>
-        
-        
           <td>
             <div class="row">
               <div class="col">
@@ -239,7 +242,7 @@
           <br>   
             <div class="row">
               <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/comparison/GEN5.mov" width="100%"
+                  <video autoplay muted loop playsinline controls src="./resources/comparison/GEN5_mid.mov" width="100%"
                          style="border-radius:10px; "></video>
               </div>
               <div class="col">
@@ -271,9 +274,9 @@
         <h3 class="title is-2" style="text-align: center; padding-bottom: 10px;">Real World Deployment</h3>
          <h5>
             <center>
-             We integrade D
-            </center> DiPPeR is integrated with the 2D ROS navigation Stack, to acts as a global path planner. Given the occupancy map, DiPPeR generates a global path which is further refined by the TEB local planner - to avoid violation of the robots kinodyanmics constraints and an Phasespace Localisation system - to mitigate for state estimation inaccuracies.
-          </h5>
+              DiPPeR is integrated with the 2D ROS navigation Stack, to acts as a global path planner. Given the occupancy map, DiPPeR generates a global path which is further refined by the TEB local planner - to avoid violation of the robots kinodyanmics constraints and an Phasespace Localisation system - to mitigate for state estimation inaccuracies.
+            </center>
+         </h5>
           <td>
               <div class="row">
                   <video autoplay muted loop playsinline controls src="./resources/real_world/map1go1.mov" width="100%"
