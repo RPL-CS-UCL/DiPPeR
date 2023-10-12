@@ -118,8 +118,9 @@
         <br>
         <h5>
           <center>
-           We validate DiPPeR's performance on maps on the Validation Datase. It contains maps <br>
-           which were not seen during training but have a similar structure to the Training Dataset ones. 
+           We validate DiPPeR's performance on maps on the Validation Datase, which comprises of maps 
+           not previously encountered <br> during the training but share a similar structural 
+           pattern with those in the Training Dataset. 
           </center>
         </h5>
         <br></br>
@@ -227,7 +228,7 @@
         <br>
         <h5>
          <center>
-           We evaluate DiPPeR's generalisation cabailities in maps different than the Training Dataset ones. 
+           We evaluate DiPPeR's generalisation capabilities on maps that differ from those present in the Training Dataset. 
            </center>
         </h5>
         <br></br>
@@ -267,7 +268,9 @@
           <h3 class="title" style="text-align: center; padding-bottom: 7px;">MRPB Dataset</h3>
           <h5>
             <center>
-             Dataset used to compare DiPPeR inference speed against A* and N-A*. DiPPeR's inference time is 0.4s for all maps despite their size, which is one average 70 times faster than the SOTA planners. 
+             Dataset used to compare DiPPeR's inference speed with that of A* and N-A*.  
+             DiPPeR's inference time is 0.4s for all maps, regardless of their size,  
+             which is on average 70 times faster than the SOTA planners. 
             </center>
           </h5>
           <br>   
@@ -306,7 +309,11 @@
         <h3 class="title is-2" style="text-align: center; padding-bottom: 10px;">Real World Deployment</h3>
          <h5>
             <center>
-              DiPPeR is integrated with the 2D ROS navigation Stack, to acts as a global path planner. Given the occupancy map, DiPPeR generates a global path which is further refined by the TEB local planner - to avoid violation of the robots kinodyanmics constraints and an Phasespace Localisation system - to mitigate for state estimation inaccuracies.
+              DiPPeR is integrated into the 2D ROS Navigation Stack, serving as the global path planner. 
+              When provided with the occupancy map, DiPPeR generates an initial global path. 
+              This path is subsequently fine-tuned by the TEB local planner to ensure the avoidance of violations 
+              of the robot's kinodynamic constraints. Additionally, the Phasespace Localisation system is employed 
+              to mitigate for state estimation inaccuracies.
             </center>
          </h5>
           <td>
