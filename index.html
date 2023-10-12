@@ -122,7 +122,7 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">Medium Trajectories</h3>
+        <h3 class="title" style="text-align: center; padding-bottom: 7px;">Medium Trajectories</h3>
         <h5>
           <center>
            100 < Path Length < 200
@@ -157,7 +157,7 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">Long Trajectories</h3>
+        <h3 class="title" style="text-align: center; padding-bottom: 7px;">Long Trajectories</h3>
         <h5>
           <center>
            Path Length > 200
@@ -193,7 +193,7 @@
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Out-of-Distribution Dataset</h2>
-        <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">OOD Dataset</h3>
+        <h3 class="title" style="text-align: center; padding-bottom: 7px;">OOD Dataset</h3>
         <h5>
           <center>
             Dataset consist of maps of different size, obstacle structure and colour, to test the generalisation capabilities of DiPPeR.
@@ -230,7 +230,7 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-          <h3 class="title is-2" style="text-align: center; padding-bottom: 7px;">MRPB Dataset</h3>
+          <h3 class="title" style="text-align: center; padding-bottom: 7px;">MRPB Dataset</h3>
           <h5>
             <center>
              Dataset used to compare DiPPeR inference speed against A* and N-A*.
@@ -239,19 +239,19 @@
           <br>   
             <div class="row">
               <div class="col">
-                  <video autoplay muted loop playsinline controls src="./resources/comparison/GEN10.mov" width="100%"
+                  <video autoplay muted loop playsinline controls src="./resources/comparison/GEN5.mov" width="100%"
                          style="border-radius:10px; "></video>
+              </div>
+              <div class="col">
+                <video autoplay muted loop playsinline controls src="./resources/comparison/GEN7.mov" width="100%"
+                       style="border-radius:10px; "></video>
               </div>
               <div class="col">
                 <video autoplay muted loop playsinline controls src="./resources/comparison/GEN6_1.mov" width="100%"
                        style="border-radius:10px; "></video>
               </div>
-              <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/comparison/GEN5_mid.mov" width="100%"
-                       style="border-radius:10px; "></video>
-              </div>
                <div class="col">
-                <video autoplay muted loop playsinline controls src="./resources/comparison/GEN7.mov" width="100%"
+                <video autoplay muted loop playsinline controls src="./resources/comparison/GEN10.mov" width="100%"
                        style="border-radius:10px; "></video>
               </div>
 
@@ -268,7 +268,12 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-2" style="text-align: center; padding-bottom: 10px;">Real World Deployment</h2>
+        <h3 class="title is-2" style="text-align: center; padding-bottom: 10px;">Real World Deployment</h3>
+         <h5>
+            <center>
+             We integrade D
+            </center> DiPPeR is integrated with the 2D ROS navigation Stack, to acts as a global path planner. Given the occupancy map, DiPPeR generates a global path which is further refined by the TEB local planner - to avoid violation of the robots kinodyanmics constraints and an Phasespace Localisation system - to mitigate for state estimation inaccuracies.
+          </h5>
           <td>
               <div class="row">
                   <video autoplay muted loop playsinline controls src="./resources/real_world/map1go1.mov" width="100%"
